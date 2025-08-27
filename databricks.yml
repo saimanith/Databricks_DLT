@@ -1,0 +1,13 @@
+bundle:
+  name: NYC_taxi_demo
+
+include:
+  - resources/pipeline.yml
+
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      host: https://dbc-dfc411fa-df88.cloud.databricks.com/
+      root_path: /Users/saimanith.bunty921@gmail.com/ny-taxi-demo # example workspace root path

@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_ny_taxi:
+      name: NY-Taxi-demo
+      libraries:
+        - notebook:
+            path: /Users/saimanith.bunty921@gmail.com/NY_taxi_local_demo
+      schema: ny_taxi
+      continuous: false
+      development: true
+      photon: true
+      channel: PREVIEW
+      catalog: main
+      serverless: true
